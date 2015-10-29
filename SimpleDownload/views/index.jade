@@ -1,0 +1,13 @@
+﻿extends layout
+
+block content
+  p
+    label 你的名字
+        input#name
+    button(onclick='postDownload();') 使用 POST 下载
+  script.
+    function postDownload() {
+        $.download.post('down', {
+            name: $('#name').val()
+        });
+    }
