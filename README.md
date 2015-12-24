@@ -1,3 +1,5 @@
+SimpleDownload
+---
 
 A simple jQuery download plugin.
 
